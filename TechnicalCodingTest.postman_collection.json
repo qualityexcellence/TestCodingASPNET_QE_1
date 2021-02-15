@@ -1,0 +1,238 @@
+{
+	"variables": [],
+	"info": {
+		"name": "TechnicalCodingTest",
+		"_postman_id": "ef9ab16f-aa94-2e77-b471-57d7bfd7656b",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:51045/login",
+			"request": {
+				"url": "http://localhost:51045/login",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"contact@qualityexcellence.info\",\r\n  \"password\": \"123\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:51045/register",
+			"request": {
+				"url": "http://localhost:51045/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"firstName\": \"Quality\",\r\n\t\"lastName\": \"Excellence\",\r\n  \"emailID\": \"contact@qualityexcellence.info\",\r\n  \"userPassword\": \"123\"\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:51045/newcar",
+			"request": {
+				"url": "http://localhost:51045/newcar",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImNvbnRhY3RAcXVhbGl0eWV4Y2VsbGVuY2UuaW5mbyIsImV4cCI6MTYxMzQ1NjAzOCwiaXNzIjoiaHR0cHM6Ly9xdWFsaXR5ZXhjZWxsZW5jZS5pbmZvIiwiYXVkIjoiaHR0cHM6Ly9xdWFsaXR5ZXhjZWxsZW5jZS5pbmZvIn0.piP9Q6cq9VRcxrac_cxdGvyR34BVxJQQ8me1S5ezgA8",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"name\": \"Tata Nexon\",\r\n\t\"color\": \"White\",\r\n  \"yearMade\": 2019\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:51045/deleteUser",
+			"request": {
+				"url": "http://localhost:51045/deleteUser/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImppZ25lc2guZG9taW5hbnRAZ21haWwuY29tIiwiZXhwIjoxNjEzMzc3Nzc2LCJpc3MiOiJodHRwczovL2RvbWluYW50Y3MuY29tIiwiYXVkIjoiaHR0cHM6Ly9kb21pbmFudGNzLmNvbSJ9.7wQgZ-Cx0G1t8L9bMkkQufBdxUqGWGku55pK5ImwreE",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:51045/deleteCar",
+			"request": {
+				"url": "http://localhost:51045/deleteCar/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImNvbnRhY3RAcXVhbGl0eWV4Y2VsbGVuY2UuaW5mbyIsImV4cCI6MTYxMzQ1NjAzOCwiaXNzIjoiaHR0cHM6Ly9xdWFsaXR5ZXhjZWxsZW5jZS5pbmZvIiwiYXVkIjoiaHR0cHM6Ly9xdWFsaXR5ZXhjZWxsZW5jZS5pbmZvIn0.piP9Q6cq9VRcxrac_cxdGvyR34BVxJQQ8me1S5ezgA8",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:51045/updateUser",
+			"request": {
+				"url": "http://localhost:51045/updateUser/1",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImppZ25lc2guZG9taW5hbnRAZ21haWwuY29tIiwiZXhwIjoxNjEzMzc1MDAzLCJpc3MiOiJodHRwczovL2RvbWluYW50Y3MuY29tIiwiYXVkIjoiaHR0cHM6Ly9kb21pbmFudGNzLmNvbSJ9.Z2vuIx251SR5wLScB6W1ZSD4SEB79W55k0fHUm76ssE",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  { \"op\": \"replace\", \"path\": \"/firstName\", \"value\": \"Quality 1\" },\r\n  { \"op\": \"replace\", \"path\": \"/lastName\", \"value\": \"Excellence 1\" }\r\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:51045/updateCar",
+			"request": {
+				"url": "http://localhost:51045/updateCar/1",
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json-patch+json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImNvbnRhY3RAcXVhbGl0eWV4Y2VsbGVuY2UuaW5mbyIsImV4cCI6MTYxMzQ1NjAzOCwiaXNzIjoiaHR0cHM6Ly9xdWFsaXR5ZXhjZWxsZW5jZS5pbmZvIiwiYXVkIjoiaHR0cHM6Ly9xdWFsaXR5ZXhjZWxsZW5jZS5pbmZvIn0.piP9Q6cq9VRcxrac_cxdGvyR34BVxJQQ8me1S5ezgA8",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n  { \"op\": \"replace\", \"path\": \"/color\", \"value\": \"Blue\" },\r\n  { \"op\": \"replace\", \"path\": \"/yearMade\", \"value\": \"2020\" }\r\n]"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:51045/getprofile",
+			"request": {
+				"url": {
+					"raw": "http://localhost:51045/getprofile?UserId=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51045",
+					"path": [
+						"getprofile"
+					],
+					"query": [
+						{
+							"key": "UserId",
+							"value": "1",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImppZ25lc2guZG9taW5hbnRAZ21haWwuY29tIiwiZXhwIjoxNjEzMzc3Nzc2LCJpc3MiOiJodHRwczovL2RvbWluYW50Y3MuY29tIiwiYXVkIjoiaHR0cHM6Ly9kb21pbmFudGNzLmNvbSJ9.7wQgZ-Cx0G1t8L9bMkkQufBdxUqGWGku55pK5ImwreE",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:51045/getcarbyyear",
+			"request": {
+				"url": {
+					"raw": "http://localhost:51045/getcarbyyear?MadeYear=2019",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "51045",
+					"path": [
+						"getcarbyyear"
+					],
+					"query": [
+						{
+							"key": "MadeYear",
+							"value": "2019",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJFbWFpbCI6ImNvbnRhY3RAcXVhbGl0eWV4Y2VsbGVuY2UuaW5mbyIsImV4cCI6MTYxMzQ1NjAzOCwiaXNzIjoiaHR0cHM6Ly9xdWFsaXR5ZXhjZWxsZW5jZS5pbmZvIiwiYXVkIjoiaHR0cHM6Ly9xdWFsaXR5ZXhjZWxsZW5jZS5pbmZvIn0.piP9Q6cq9VRcxrac_cxdGvyR34BVxJQQ8me1S5ezgA8",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
